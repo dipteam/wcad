@@ -1,0 +1,6 @@
+audio/*
+results/*
+bin/*
+figures/*
+.idea/*
+**/*.pyc
