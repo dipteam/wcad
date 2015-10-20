@@ -36,7 +36,7 @@ Branislav Gerazov
 
 [DIPteam](http://dipteam.feit.ukim.edu.mk/)
 
-[Faculty of Electrical Engineering and Information Technologies](www.feit.ukim.edu.mk)
+[Faculty of Electrical Engineering and Information Technologies](http://feit.ukim.edu.mk)
 
 Ss Cyril and Methodius University of Skopje,
 
