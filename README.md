@@ -35,6 +35,9 @@ Garner, "Weighted Correlation based Atom Decomposition Intonation Modelling," in
 Branislav Gerazov
 
 [DIPteam](http://dipteam.feit.ukim.edu.mk/)
+
 [Faculty of Electrical Engineering and Information Technologies](http://feit.ukim.edu.mk)
+
 Ss Cyril and Methodius University of Skopje,
+
 Macedonia
