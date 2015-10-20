@@ -10,7 +10,7 @@ git clone git@github.com:dipteam/wcad.git
 cd wcad
 ./wcad.py path-to-audio/my-wav.wav path-to-results/
 ```
-To run WCAD you need a compiled binary for the pitch tracker `compute-kaldi-pitch-feats` from [Kaldi](http://kaldi-asr.org/). WCAD uses it to get a continuous pitch estimate and a probability of voicing. Kaldi's code can be found [here](https://github.com/kaldi-asr/kaldi). Once compiled you need to add the path to the binary in the file `./paths.py`.
+To run WCAD you need a compiled binary for the pitch tracker `compute-kaldi-pitch-feats` from [Kaldi](http://kaldi-asr.org/). WCAD uses it to get a continuous pitch estimate and a probability of voicing. Kaldi's code can be found [here](https://github.com/kaldi-asr/kaldi). Once compiled you need to add the path to the binary in the file `./paths.cfg`.
 
 The code supports [Praat](http://www.fon.hum.uva.nl/praat/) TextGrid annotations for extracting the utterance boundaries and for plotting syllables/words/phones in the final plots. By default these should be in a folder called `annotations/` in the audio folder. This functionality is added with the inclusion of `textgrid.py` from the [Natural Language Toolkit (NLTK)](https://github.com/nltk/nltk_contrib), which can be found [here](https://github.com/nltk/nltk_contrib/blob/master/nltk_contrib/textgrid.py).
 
@@ -35,9 +35,6 @@ Garner, "Weighted Correlation based Atom Decomposition Intonation Modelling," in
 Branislav Gerazov
 
 [DIPteam](http://dipteam.feit.ukim.edu.mk/)
-
 [Faculty of Electrical Engineering and Information Technologies](http://feit.ukim.edu.mk)
-
 Ss Cyril and Methodius University of Skopje,
-
 Macedonia
