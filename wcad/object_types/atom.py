@@ -7,6 +7,7 @@
 # Author(s):
 #   Branislav Gerazov, October 2015
 #   Aleksandar Gjoreski, October 2015
+#   Pierre-Edouard Honnet, October 2015
 #
 
 import numpy as np

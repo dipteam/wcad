@@ -7,6 +7,8 @@
 # Author(s):
 #   Branislav Gerazov, October 2015
 #   Aleksandar Gjoreski, October 2015
+#   Pierre-Edouard Honnet, October 2015
+#   Phil Garner, October 2015
 #
 
 import numpy as np
@@ -35,7 +37,6 @@ class EnergyComputer:
         #                  this actually gives an array!
         return frames
 
-    # This was taken from Phil's codec:
     # Frame energy
     @staticmethod
     def energy(a):
@@ -44,7 +45,6 @@ class EnergyComputer:
         # e = np.apply_along_axis(np.linalg.norm, 1, a) ** 2
         return e
 
-    # This was taken from Phil's codec:
     # Window
     # It's trivial, but helps the program look good
     @staticmethod
