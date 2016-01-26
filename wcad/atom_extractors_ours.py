@@ -164,8 +164,9 @@ class OurWeightedAtomExtractor(OurAtomExtractor):
     """
 
     def compute(self):
-        self.extrapolate()
-        pre_pad = self.params.atom_ex_pad_pre * self.params.frame_rate
+        # self.extrapolate()
+        # pre_pad = self.params.atom_ex_pad_pre * self.params.frame_rate
+
         # We want to fit the atoms to weighted f0_diff
         f0 = self.pitch.f0_log
         f0_diff = self.pitch.f0_log - self.phrase.curve
@@ -179,10 +180,10 @@ class OurWeightedAtomExtractor(OurAtomExtractor):
                 start = self.phrase.pitch_max_in
                 end = self.phrase.pitch_max_out
 
-            f0_diff[:start+pre_pad] = 0
-            weight[:start+pre_pad] = 0
-            f0_diff[end + self.params.fix_pos_ref_func_end_s_ext+pre_pad:] = 0
-            weight[end + self.params.fix_pos_ref_func_end_s_ext+pre_pad:] = 0
+            f0_diff[:start] = 0
+            weight[:start] = 0
+            f0_diff[end + self.params.fix_pos_ref_func_end_s_ext:] = 0
+            weight[end + self.params.fix_pos_ref_func_end_s_ext:] = 0
 
         # Stopping parameters
         n_atoms = f0_diff_len//20 if self.params.num_atoms is None else self.params.num_atoms
@@ -279,5 +280,5 @@ class OurWeightedAtomExtractor(OurAtomExtractor):
 
         print "Extracted %d atoms in %s seconds" % (len(atoms), time.time() - start_time)
 
-        self.deextrapolate(atoms)
+        # self.deextrapolate(atoms)
         return atoms
