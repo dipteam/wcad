@@ -45,7 +45,7 @@ class Atom:
         self.curve = None
         self.curve = self.get_curve()
 
-    def get_padded_curve(self, wanted_len):
+    def get_padded_curve(self, wanted_len, just_sign=False, include_amplitude=True):
         self.generate_curve()
 
         position = self.position
@@ -72,8 +72,14 @@ class Atom:
             curve = curve[:-crop_len]
         padded_curve = np.pad(curve, (pre_pad, post_pad), 'constant')
 
-        # # Apply the gain:
-        padded_curve *= self.amp
+        if just_sign:
+            padded_curve *= np.sign(self.amp)
+            return padded_curve
+
+        # Apply the gain:
+        if include_amplitude:
+            if not just_sign:
+                padded_curve *= self.amp
 
         return padded_curve
 

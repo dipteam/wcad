@@ -120,8 +120,8 @@ class Params:
         self.atom_ex_pad_pre = 0.1  # resize before local atom extraction
         self.atom_ex_pad_post = 0.2
 
-        # type of extraction: 'corr', 'wcorr' (default)
-        self.local_type = 'wcorr'
+        # type of extraction: 'corr', 'wcorr' (default), 'womp' - weighted Orthogonal MP
+        self.local_type = 'womp'
 
         # Atoms' sign: 'positive_only', 'both' (default)
         self.atoms_sign = 'both'
