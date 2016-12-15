@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 #
 # Copyright 2015 by Ss Cyril and Methodius University in Skopje, Macedonia
+# Copyright 2015 by Idiap Research Institute in Martigny, Switzerland 
 #
 # See the file COPYING for the licence associated with this software.
 #
