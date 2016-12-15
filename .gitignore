@@ -4,3 +4,4 @@ bin/*
 figures/*
 .idea/*
 **/*.pyc
+.directory
