@@ -84,7 +84,7 @@ class Params:
         # reference function for fixing position: pov, energy, weight,
         # first (first to go over thresh), both (must be above thresh)
         # can also be annotations
-        self.fix_pos_ref_func = 'annotations'
+        self.fix_pos_ref_func = 'energy' # None #'annotations'
 
         # else:
         self.fix_pos_ref_func_th = 0.01  # threshold for seeking peak (ref_func is normalized)
@@ -121,8 +121,8 @@ class Params:
         self.atom_ex_pad_pre = 0.1  # resize before local atom extraction
         self.atom_ex_pad_post = 0.2
 
-        # type of extraction: 'corr', 'wcorr' (default), 'womp' - weighted Orthogonal MP
-        self.local_type = 'womp'
+        # type of extraction: 'corr', 'wcorr' (default)
+        self.local_type = 'wcorr'
 
         # Atoms' sign: 'positive_only', 'both' (default)
         self.atoms_sign = 'both'
@@ -167,7 +167,7 @@ class Params:
         # plot pov colored pitch or weight colored
         self.plot_pov_color = True
         # plot Praat textgrids
-        self.plot_textgrids = True
+        self.plot_textgrids = False
         # plot pitch_max_in and out
         self.plot_pitch_max_in_out = True
 

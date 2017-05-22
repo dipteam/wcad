@@ -15,8 +15,8 @@ from optparse import OptionParser
 import time
 import shutil
 
-# (opts, args) = OptionParser().parse_args()
-args = ['audio/A01.wav', 'results']  # testing example
+(opts, args) = OptionParser().parse_args()
+# args = ['audio/A01.wav', 'results']  # testing example
 # args = ['audio/A01E.wav', 'results']  # testing example
 # args = ['audio/A02.wav', 'results']  # testing example
 # args = ['audio/A02E.wav', 'results']  # testing example
